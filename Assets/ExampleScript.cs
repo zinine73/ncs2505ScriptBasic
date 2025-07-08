@@ -6,6 +6,7 @@ public class ExampleScript : MonoBehaviour
 {
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.R))
         {
             GetComponent<Renderer>().material.color = Color.red;
@@ -17,6 +18,10 @@ public class ExampleScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.B))
         {
             GetComponent<Renderer>().material.color = Color.blue;
+        }
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            GetComponent<Renderer>().material.color = Color.cyan;
         }
     }
 }
