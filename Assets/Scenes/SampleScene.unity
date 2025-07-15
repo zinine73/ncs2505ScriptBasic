@@ -368,11 +368,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1170188172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afbe973645e1fe44e8a83c80310facf1, type: 3}
+  m_Script: {fileID: 11500000, guid: 37a358d0259c05b4abce1f09003084af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alphaBetaGamma: 100
-  beta: 100
+  publicValue: 1
+  pv2: 4
+  isPublic: 0
 --- !u!1 &1812835893
 GameObject:
   m_ObjectHideFlags: 0
