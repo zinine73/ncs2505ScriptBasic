@@ -8,6 +8,43 @@ public class VariableExample : MonoBehaviour
     int globalNumber = 0;
     void Start()
     {
+        // 16진수
+        var hexLiteral = 0xaf;
+        // 2진수
+        var binaryLiteral = 0b_0000_0001;
+
+        // 최대값, 최소값
+        int i = int.MaxValue;
+        float f = float.MinValue;
+
+        bool b = default(bool); // b = false
+
+        string s1 = null;
+        string s2 = "";
+        string s3 = string.Empty;
+
+        if (s1 == s2)
+        {
+            Debug.Log("same");
+        }
+        else
+        {
+            Debug.Log("diff...");
+        }
+
+        // 참조에러 방지를 위한 코드
+        if (s1 != null)
+        {
+
+        }
+
+        // nullable
+        int? ii = null;
+        if (ii == null)
+        {
+            ii = 30;
+        }
+
         int localNumber = 0;
         Console.WriteLine(globalNumber);
         Console.WriteLine(localNumber);
