@@ -34,14 +34,43 @@ public class Class1
 
 public class ClassSample : MonoBehaviour
 {
+    int aa = Class1.staticInt;
     //Class1 class1 = new Class1();
     Class1 class1 = new Class1(100);
 
+    int property = 0;
+    public int Property
+    {
+        get
+        {
+            Debug.Log("Get property");
+            return property;
+        }
+        set
+        {
+            if (value > 100) value = 100;
+            property = value;
+        }
+    }
+    public int Pty2 { get; set; }
+    
+    void Awake()
+    {
+        //property = 1;
+        Property = 444;
+    }
     public void Start()
     {
         Class1.staticInt++;
         class1.DebugLog("Example");
         class1.Start();
+        //property = 100;
+        Debug.Log(property);
     }
-}
 
+    // public void SetProperty(int val)
+    // {
+    //     if (val > 100) val = 100;
+    //     property = val;
+    // }
+}
