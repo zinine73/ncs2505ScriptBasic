@@ -9,9 +9,11 @@ public class PropertySample : MonoBehaviour
         {
             Debug.Log($"PS : {cs.Property}");
             cs.Property = 33;
-            //cs.SetProperty(333);
-            cs.Pty2 = 3223;
-            Debug.Log($"PS : {cs.Pty2}");
+            cs.SetProperty(333);
+            //cs.Pty2 = 3223;
+            //Debug.Log($"PS : {cs.Pty2}");
+            cs[0] = 34;
+            Debug.Log($"Indexer : {cs[0]}");
         }
     }
 }

@@ -52,8 +52,36 @@ public class ClassSample : MonoBehaviour
             property = value;
         }
     }
-    public int Pty2 { get; set; }
-    
+    //public int Pty2;
+    [SerializeField] int Pty2;
+    public int Pty3;
+    float fvalue = 0.1f;
+    public float Fvalue
+    {
+        //get { return fvalue + 0.1f; }
+        get => fvalue + 0.1f;
+        //set { fvalue = value; }
+        set => fvalue = value;
+    }
+    // string nameStr;
+    // public string NameStr
+    // {
+    //     get
+    //     {
+    //         return "MyName";
+    //     }
+    //     //get => "MyName";
+    // }
+    public string NameStr => "MyName";
+
+    /// indexer /////////////////////
+    private int[] x = new int[10];
+    public int this[int i]
+    {
+        get { return x[i]; }
+        set { x[i] = value; }
+    }
+
     void Awake()
     {
         //property = 1;
@@ -68,9 +96,9 @@ public class ClassSample : MonoBehaviour
         Debug.Log(property);
     }
 
-    // public void SetProperty(int val)
-    // {
-    //     if (val > 100) val = 100;
-    //     property = val;
-    // }
+    public void SetProperty(int val)
+    {
+        if (val > 100) val = 100;
+        property = val;
+    }
 }
