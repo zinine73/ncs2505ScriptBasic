@@ -342,8 +342,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1779272879}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95c7f8cfb65b7664386a8db5505fd73c, type: 3}
+  m_Script: {fileID: 11500000, guid: c2b3b63712f53254eb95074a4025f2d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prfbEntity: {fileID: 649496861869231307, guid: 6135c1de3a3a8a14195849b8826129d1, type: 3}
-  spawnEntity: {fileID: 11400000, guid: 3ddde876d9b908a43b77baf45f21e716, type: 2}
+  scoreBoard: {fileID: 0}
+  score: 0
+  oldScore: 0
